@@ -1,55 +1,79 @@
 <!DOCTYPE html>
 <html lang="sv">
-
-   
-        <head>
+    <head>
+        <link rel="shortcut icon" href="#">
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, inital-scale-1.0">
-        <meta name="Description" content="Erik IT-säkerhet specilsit snälla anställ mig jag har ingenstans att bo">
+        <meta name="description" content="Erik Eriksson,  specialist snälla anställ mig jag har ingenstans att bo">
+        <meta name="keywords" content="It-Specialist, IT-Säkerhet, Högskolan Dalarna, Mjukvaru-Utvecklare">
+        <meta name="author" content="Erik Eriksson">
         <title> Front Page </title>
         <link rel="stylesheet" href="/CSS/Site.css">
+        <link rel="stylesheet" href="/CSS/Home.css">
         <script src="/JavaScript/Main.js" defer></script>
-        </head>
-        <body>
-        <header class = "MainHeader" >
-            <nav class="Main_nav">
-                <ul>
-                    <li>
-                        <a class="Home_nav" href="/View/Home.html" aria-current="page">Home</a>
-                    </li>
-                    <li>
-                        <a class="Project_page_old" href="/View/Projects_old.html" aria-current="page">Projects_old</a>
-                    </li>
-                    <li>
-                        <a class="Current_Project" href="/View/Current_projects.html" aria-current="page">Current_Project</a>
-                    </li>
-                    <li>
-                        <a class="Skills" href="/View/Kompetenser.html" aria-current="page">Kompetenser</a>
-                    </li>
-                    <li>
-                        <a class="About_page" href="/View/About-Me.html" aria-current="page">About_Me</a>
-                    </li>
-                </ul>
+    </head>
+
+    <body>
+    <header class = "MainHeader" >
+        <nav class="Main_nav">
+            <ul>
+                <li>
+                    <a class="Home_nav" href="/View/Home.html" aria-current="page">Hem</a>
+                </li>
+                <li>
+                    <a class="Project_page_old" href="/View/Utbildning.html" aria-current="page">Utbildning</a>
+                </li>
+                <li>
+                    <a class="Current_Project" href="/View/Current_projects.html" aria-current="page">Nuvarande Projekt</a>
+                </li>
+                <li>
+                    <a class="Skills" href="/View/Kompetenser.html" aria-current="page">Kompetenser</a>
+                </li>
+                <li>
+                    <a class="About_page" href="/View/About-Me.html" aria-current="page">Mer om Mig</a>
+                </li>
+                <li>
+                    <a class="About_page" href="/View/Kontakta.html" aria-current="page">Kontakta mig</a>
+                </li>
+            </ul>
+        </nav>
 
 
-            </nav>
-            <main>
+    <main> 
+        <h1 class=" Mainstyle">Hej och Välkommen</h1>
+        <p>Vad roligt att du kikar förbi, här under finns några länkar på mina tidigare projekt jag är lite extra stolt över men även vad Jag jobbar på just nu.</p>
+            <br>
+            <section class="buttonhome" > 
+                <button class="button" data-js-action="Current_Project" aria-label="Nuvrande Projekt"></button>
+                <br>
+                <button class="button" data-js-action="Projects_old" aria-label="Gamla Projekt"></button>
+                <br>
+                <button class="button" data-js-action="About-Me" aria-label="Om Mig"></button>
+            </section>
+        <picture>
+            <img src="/Shared/Images/headshot-960.jpg" alt="Headshot of Erik" style="float:right"
+            srcset="/Shared/Images/headshot-480.jpg 480w, /Shared/Images/headshot-960.jpg 960w, /Shared/Images/headshot-1280.jpg 1280w"
+            sizes="(max-width: 480px) 100vw,(max-width: 960px) 70vw,240px">     
+        </picture>
 
+    </body>
 
-            <h1 class=" Mainstyle">Hello world</h1>
-                <button data-js-action="Current_Project"></button>
-                <button data-js-action="Projects_old"></button>
-                <button data-js-action="About-Me"></button>
-            <figure>
-            <img src="/Shared/Images/Minecraft_dog.png" alt="A dog from Minecraft" style="float:right" width="500" height="400">         
-            </figure>
-        </body>
-        </main>
-            <footer>
-                <ul>
-                    <li>
-                        <a class="About_page_F" href="/View/About-Me.html" aria-current="page">About_Me</a>
-                    </li>
-                </ul>
-            </footer>
-    </html>
+    </main>
+        <footer>
+            <ul>
+                <li><a href="tel = 46710122222">Ring mig</a></li>
+                <li><a href="mailto:ArondomExample@gmail.com">Maila Mig</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank">Linkdin</a></li>
+            </ul>
+        </footer>
+</html>
+
+<footer>
+    <ul>
+        <li>Kontakta mig: <a href="tel = 46710122222">46710122222</a></li>
+
+        <li><a href="mailto:ArondomExample@gmail.com">Maila Mig</a></li>
+
+        <li><a href="https://www.linkedin.com/" target="_blank">Linkdin</a></li>
+    </ul>
+</footer>
