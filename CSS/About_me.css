@@ -1,6 +1,14 @@
 
 
-
-.MainHeader{
+.AboutMe{
     color: blue;
+}
+
+.Bergstopp{
+    padding: 0%;
+}
+
+.Image_erik{
+    margin: 15px;
+    display: center;
 }
