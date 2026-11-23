@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 
 .MainHeader {
     width: 100%;
     
+=======
+.MainHeader {
+    width: 100%;
+
+>>>>>>> ChrisBranch
     padding: 15px 0;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
@@ -24,7 +30,11 @@
 
 .Main_nav a {
     display: inline-block;
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> ChrisBranch
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -42,9 +52,14 @@
 .Main_nav a[aria-current="page"] {
     color: black;
 }
+<<<<<<< HEAD
 
 /*AI
 /* Make links easier to click */
+=======
+/*AI
+/ Make links easier to click */
+>>>>>>> ChrisBranch
 footer a {
     display: inline-block;
     padding: 12px 16px;
@@ -70,9 +85,12 @@ footer li {
         font-size: 14px;
     }
 }
+<<<<<<< HEAD
 
 .button{
     padding: 16px 10px; 
     margin: 10;
 
 }
+=======
+>>>>>>> ChrisBranch
