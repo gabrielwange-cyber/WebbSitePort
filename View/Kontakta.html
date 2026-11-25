@@ -10,7 +10,7 @@
         <title> Kontakta mig </title>
         <link rel="stylesheet" href="/CSS/Site.css">
         <link rel="stylesheet" href="/CSS/Kontakta.css">
-        <script src="/JavaScript/Main.js" defer></script>
+        <script src="/JavaScript/script.js" defer></script>
     </head>
     <body>
     <header class = "MainHeader" >
@@ -37,11 +37,22 @@
             </ul>
         </nav>
     <main>
-        <h1>Vill du hellre att jag kontaktar dig, fyll i formuläret här nedanför med din information</h1>
-        <!--Add a form and a button to allow the user of the web site to send in an application to the inqure or contact the Erik this should be connected
-        to the a js script which then creates a json file.--> 
-        <form action="ContactForm"></form>
+        <section>
+                <h1>Vill du hellre att jag kontaktar dig, fyll i formuläret här nedanför med din information</h1>
+                <form class ="contact-Form">
+                    <label for="NameInput">Ditt Namn</label>
+                    <input id="NameInput" type="text" name="namn" data-label="Namn" required>
 
+                    <label for="TelefonInput">Ditt Telefon Nummer</label>
+                    <input id="TelefonInput" type="tel" name="tel" data-label="Telefon" required>
+
+                    <label for="EmailInput">Din Email</label>
+                    <input id="EmailInput" type="email" name="email" data-label="Email" required>
+
+                    <button class="ContactInfoButton" type="button" data-js-action="send-contact">Skicka</button>
+                </form>
+                <p data-js-target="contact-info"></p>
+        </section>
     </body>
     </main>
         <footer>
