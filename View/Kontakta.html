@@ -1,68 +1,69 @@
-main<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sv">
     <head>
+        <link rel="shortcut icon" href="#">
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, inital-scale-1.0">
         <meta name="description" content="Kontakta Erik">
         <meta name="keywords" content="It-Specialist, IT-Säkerhet, Högskolan Dalarna, Mjukvaru-Utvecklare">
         <meta name="author" content="Erik Eriksson">
-        <title> Kontakta mig - Erik Eriksson </title>
+        <title> Kontakta mig </title>
         <link rel="stylesheet" href="/CSS/Site.css">
         <link rel="stylesheet" href="/CSS/Kontakta.css">
-        <script src="/JavaScript/Main.js" defer></script>
+        <script src="/JavaScript/script.js" defer></script>
     </head>
     <body>
+    <main>
     <header class = "MainHeader" >
         <nav class="Main_nav">
             <ul>
-                <li><a class="Home_nav" href="/View/Home.html" aria-current="page">Hem</a></li>
-                <li><a class="Project_page_old" href="/View/Utbildning.html" aria-current="page">Utbildning</a></li>
-                <li><a class="Current_Project" href="/View/Current_projects.html" aria-current="page">Nuvarande Projekt</a></li>
-                <li><a class="Skills" href="/View/Kompetenser.html" aria-current="page">Kompetenser</a></li>
-                <li><a class="About_page" href="/View/About-Me.html" aria-current="page">Mer om Mig</a></li>
-                <li><a class="About_page" href="/View/Kontakta.html" aria-current="page">Kontakta mig</a></li>
+                <li>
+                    <a class="Home_nav" href="/View/Home.html" aria-current="page">Hem</a>
+                </li>
+                <li>
+                    <a class="Project_page_old" href="/View/Utbildning.html" aria-current="page">Utbildning</a>
+                </li>
+                <li>
+                    <a class="Current_Project" href="/View/Current_projects.html" aria-current="page">Nuvarande Projekt</a>
+                </li>
+                <li>
+                    <a class="Skills" href="/View/Kompetenser.html" aria-current="page">Kompetenser</a>
+                </li>
+                <li>
+                    <a class="About_page" href="/View/About-Me.html" aria-current="page">Mer om Mig</a>
+                </li>
+                <li>
+                    <a class="About_page" href="/View/Kontakta.html" aria-current="page">Kontakta mig</a>
+                </li>
             </ul>
-        </nav>
+        </nav>  
     </header>
-    <main>
-        <h1>Vill du hellre att jag kontaktar dig, fyll i formuläret här nedanför med din information</h1>
-        <!--Add a form and a button to allow the user of the web site to send in an application to the inqure or contact the Erik this should be connected
-        to the a js script which then creates a json file.--> 
-        <section arial-labelledby="ContactHeading">
-            <h1 id = "ContactHeading">Kontakta mig</h1>
-            <p>Vill du häldre att jag kontaktar dig? fyll in formuläret nedan</p>
-        </section>
-
-        <form id="ContactForm" action="/php/Tack.php" method="post">
+        <section>
+            <form id="ContactForm" action="/php/Tack.php" method="post">
+                <fieldset>
+                    <h1>Dina kontaktuppgifter</h1>
         
-        <fieldset>
-            <legend>Dina kontaktuppgifter</legend>
-
-                <label for="NameInput">Ditt namn</label>
-                <input id="NameInput" name="namn" type="text" autocomplete="name" required>
-
-                <label for="TelefonInput">Ditt telefonnummer</label>
-                <input id="TelefonInput" name="Telefon" type="tel" autocomplete="tel" required>
-
-                <label for="EmailInput">Din e-postadress</label>
-                <input id="EmailInput" name="Email" type="email" autocomplete="email" required>
-        </fieldset>
-        <button class="ContactInfoButton" type="submit">Skicka</button>
-        </form>
-
-        DATA: vad behöver actionen veta? I exemplet är det vilken pizza: data-pizza-name="Margherita".
-
-        För JS: lägg till JS-krokar för det som ska hända: data-js-action (ACTION), data-* (DATA) och data-js-target (TARGET). 
-        Du behöver inte skriva den JavaScript som utför händelsen. Men ok att göra det.  Filen js/script.js ska finnas och vara inlänkad, men den får vara tom.
-
-    </body>
+                        <label for="NameInput">Ditt namn</label>
+                        <input id="NameInput" name="namn" type="text" autocomplete="name" required>
+        
+                        <label for="TelefonInput">Ditt telefonnummer</label>
+                        <input id="TelefonInput" name="Telefon" type="tel" autocomplete="tel" required>
+        
+                        <label for="EmailInput">Din e-postadress</label>
+                        <input id="EmailInput" name="Email" type="email" autocomplete="email" required>
+                </fieldset>
+                <button class="ContactInfoButton" type="submit">Skicka</button>
+                </form>
+                <p data-js-target="contact-info"></p>
+        </section>
     </main>
-        <footer>
-            <ul>
-                <li><a href="tel = 46710122222">Ring mig</a></li>
-                <li><a href="mailto:ArondomExample@gmail.com">Maila Mig</a></li>
-                <li><a href="https://www.linkedin.com" target="_blank">Linkdin</a></li>
-            </ul>
-        </footer>
-</html>
 
+    <footer>
+        <ul>
+            <li><a href="tel=46710122222">Ring mig</a></li>
+            <li><a href="mailto:ArondomExample@gmail.com">Maila Mig</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank">Linkdin</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
