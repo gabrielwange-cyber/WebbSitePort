@@ -41,7 +41,7 @@
         <section>
             <form id="ContactForm" action="/php/Tack.php" method="post">
                 <fieldset>
-                    <h1>Dina kontaktuppgifter</h1>
+                    <legend>Dina kontaktuppgifter</legend>
         
                         <label for="NameInput">Ditt namn</label>
                         <input id="NameInput" name="namn" type="text" autocomplete="name" required>
@@ -52,7 +52,7 @@
                         <label for="EmailInput">Din e-postadress</label>
                         <input id="EmailInput" name="Email" type="email" autocomplete="email" required>
                 </fieldset>
-                <button class="ContactInfoButton" type="submit">Skicka</button>
+                <button class="ContactInfoButton" type="submit" data-js-action="send-contact">Skicka</button>
                 </form>
                 <p data-js-target="contact-info"></p>
         </section>
